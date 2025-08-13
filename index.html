@@ -5,25 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Favourite Recipes</title>
 
-    <link rel="stylesheet" href="./styles.css" />
-
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Hungarian365</a>
+        <!-- Toggler for mobile -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="mainNavbar"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./recipes.html">Recipes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./favorites.html">Favorites</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <!-- Header -->
-    <header class="bg-light text-center py-5 mb-4">
+    <header class="gradient-header text-center py-5 mb-4">
       <div class="container">
         <h1 class="fw-bold">Paprikás krumpli</h1>
       </div>
     </header>
 
     <!-- Main -->
-    <main class="container">
+    <main class="container pb-5 mb-5">
       <div class="row align-items-start mb-5 g-4">
         <!-- image -->
         <div class="col-12 col-md-6">
@@ -39,7 +78,7 @@
         <!-- ingredients -->
         <div class="col-12 col-md-6">
           <section class="mb-4">
-            <h2>Hozzávalók:</h2>
+            <h2 class="section-title ingredients">Hozzávalók:</h2>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">1 kg burgonya</li>
               <li class="list-group-item">1 nagy fej vöröshagyma</li>
@@ -60,7 +99,7 @@
 
       <!-- instructions -->
       <section class="mb-4">
-        <h2>Elkészítés:</h2>
+        <h2 class="section-title instructions">Elkészítés:</h2>
         <ol class="list-group list-group-numbered list-group-flush">
           <li class="list-group-item">
             A krumplit megpucolva, megmosva, tetszés szerinti formára vágjuk.
@@ -88,16 +127,21 @@
       </section>
 
       <!-- source -->
-      <div>
+      <div class="mb-3">
+        <button
+          class="btn btn-link text-muted p-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#sourceCollapse"
+          aria-expanded="false"
+          aria-controls="sourceCollapse"
+        >
+          Forrás
+        </button>
+      </div>
+      <div class="collapse" id="sourceCollapse">
         <small class="text-muted">
-          Forrás:
-          <a
-            href="https://www.nosalty.hu/recept/chorizos-paprikas-krumpli-nokedlivel"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            eredeti recept
-          </a>
+          https://www.nosalty.hu/recept/chorizos-paprikas-krumpli-nokedlivel
         </small>
       </div>
     </main>

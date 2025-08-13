@@ -3,3 +3,34 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* Nav */
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+  color: var(--gradient-dark);
+}
+
+/* Header */
+
+.gradient-header {
+  background: linear-gradient(135deg, #f8edeb 0%, var(--gradient-dark) 100%);
+  color: #2a2a2a;
+}
+
+.gradient-header h1 {
+  letter-spacing: 0.05em;
+}
+
+/* Main */
+
+:root {
+  --gradient-dark: #e07a5f;
+}
+
+.section-title.ingredients {
+  color: var(--gradient-dark);
+}
+
+.section-title.instructions {
+  color: var(--gradient-dark);
+}
