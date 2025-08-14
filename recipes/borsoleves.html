@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Borsóleves</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="../index.html"
+          >My Favourite Recipes</a
+        >
+        <!-- Toggler for mobile -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="mainNavbar"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../recipes.html">Recipes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="gradient-header text-center py-5 mb-4">
+      <div class="container">
+        <h1 class="fw-bold">Borsóleves</h1>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="container pb-5 mb-5">
+      <div class="row align-items-start mb-5 g-4">
+        <!-- image -->
+        <div class="col-12 col-md-6">
+          <div class="ratio ratio-1x1">
+            <img
+              src="../photos/borsoleves.jpg"
+              class="rounded object-fit-cover w-100 h-100"
+              alt="Borsóleves"
+            />
+          </div>
+        </div>
+
+        <!-- ingredients -->
+        <div class="col-12 col-md-6">
+          <section class="mb-4">
+            <h2 class="section-title ingredients">Hozzávalók:</h2>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">3 közepes db sárgarépa</li>
+              <li class="list-group-item">2 fehérrépa</li>
+              <li class="list-group-item">400 g zöldborsó</li>
+              <li class="list-group-item">1 csokor petrezselyem</li>
+              <li class="list-group-item">1 ek finomliszt</li>
+              <li class="list-group-item">1 tk fűszerpaprika</li>
+              <li class="list-group-item">
+                1-1,5 l víz
+              </li>
+              <li class="list-group-item">só ízlés szerint</li>
+              <li class="list-group-item">ételízesítő ízlés szerint (leveskocka)</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+              <!-- ingredients 2 -->
+        <div class="col-12 col-md-6">
+          <section class="mb-4 pb-5">
+            <h3 class="section-title">A galuskához:</h3>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">1 bögre finomliszt (2.5 dl) (3 púpozott ek.)</li>
+              <li class="list-group-item">1 db tojás</li>
+              <li class="list-group-item">só ízlés szerint</li>
+              <li class="list-group-item">víz</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+
+      <!-- instructions -->
+      <section class="mb-4">
+        <h2 class="section-title instructions">Elkészítés:</h2>
+        <ol class="list-group list-group-numbered list-group-flush">
+          <li class="list-group-item">
+            Az olajon a karikára vágott répákat megpirítjuk, majd hozzáadjuk a
+            borsót és az apróra vágott petrezselyemzöldjét. Kb. 15 percig
+            pároljuk együtt. Ha kell, nagyon kevés vizet aláöntünk.
+          </li>
+          <li class="list-group-item">
+            Megszórjuk 1 ek. liszttel és pirospaprikával, majd összekeverjük.
+            Pici ideig pirítjuk.
+          </li>
+          <li class="list-group-item">
+            Felöntjük a vízzel, sózzuk, ételízesítővel megszórjuk. Puhára
+            főzzük, és közben kóstolgassuk, nem-e kell utánafűszerezni. (kb. 30
+            perc)
+          </li>
+          <li class="list-group-item">
+            A galuska hozzávalóiból közepesen kemény nokedli tésztát keverünk,
+            és vágódeszkáról vizes késsel a levesbe szaggatjuk. (vagy 2
+            kiskanállal...)
+          </li>
+        </ol>
+      </section>
+
+      <!-- source -->
+      <div class="mb-3">
+        <button
+          class="btn btn-link text-muted p-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#sourceCollapse"
+          aria-expanded="false"
+          aria-controls="sourceCollapse"
+        >
+          Forrás
+        </button>
+      </div>
+      <div class="collapse" id="sourceCollapse">
+        <small class="text-muted">
+          https://www.nosalty.hu/recept/edes-borsoleves-galuskaval
+        </small>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-5 py-3 bg-light fixed-bottom">
+      <div class="container text-center">
+        <span class="text-muted">© 2025 My Favourite Recipes</span>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

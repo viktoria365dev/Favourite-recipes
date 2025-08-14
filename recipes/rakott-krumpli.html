@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rakott krumpli</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="../index.html"
+          >My Favourite Recipes</a
+        >
+        <!-- Toggler for mobile -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="mainNavbar"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../recipes.html">Recipes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="gradient-header text-center py-5 mb-4">
+      <div class="container">
+        <h1 class="fw-bold">Rakott krumpli</h1>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="container pb-5 mb-5">
+      <div class="row align-items-start mb-5 g-4">
+        <!-- image -->
+        <div class="col-12 col-md-6">
+          <div class="ratio ratio-1x1">
+            <img
+              src="../photos/rakott-krumpli2.jpg"
+              class="rounded object-fit-cover w-100 h-100"
+              alt="Rakott-krumpli"
+            />
+          </div>
+        </div>
+
+        <!-- ingredients -->
+        <div class="col-12 col-md-6">
+          <section class="mb-4">
+            <h2 class="section-title ingredients">Hozzávalók:</h2>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">800 g burgonya</li>
+              <li class="list-group-item">250 g parasztkolbász</li>
+              <li class="list-group-item">5 db főtt tojás</li>
+              <li class="list-group-item">700 g tejföl</li>
+              <li class="list-group-item">2 ek zsemlemorzsa</li>
+              <li class="list-group-item">só ízlés szerint</li>
+              <li class="list-group-item">1 ek vaj (a sütőtál kikenéséhez)</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+      <!-- instructions -->
+      <section class="mb-4">
+        <h2 class="section-title instructions">Elkészítés:</h2>
+        <ol class="list-group list-group-numbered list-group-flush">
+          <li class="list-group-item">
+            A krumplit annyi hideg vízzel öntjük fel, hogy bőven ellepje.
+            Hozzáadjuk a sót, és a forrástól számított 20 percig, fedő alatt
+            puhára főzzük.
+          </li>
+          <li class="list-group-item">
+            Még forrón megtisztítjuk, és felszeleteljük.
+          </li>
+          <li class="list-group-item">
+            A tojásokat keményre főzzük, megtisztítjuk, és szintén
+            felszeleteljük.
+          </li>
+          <li class="list-group-item">
+            A kolbászt is hasonló vastagságúra felkarikázzuk.
+          </li>
+          <li class="list-group-item">A tejfölt megsózzuk.</li>
+          <li class="list-group-item">
+            Egy sütőálló mély edényt, tepsit alaposan kivajazunk.
+          </li>
+          <li class="list-group-item">
+            Elkezdjük a rétegezést. Elsőnek egy sor krumplit teszünk az edény
+            aljára, kissé megsózzuk, majd jön egy sor kolbász, majd a
+            tojásszeletek. Ezt is kissé megsózzuk, a tejföl kb. egyharmadát
+            rákenjük. Még egy sort rakunk így le, ott is megsózzuk a krumplit, a
+            tojást.
+          </li>
+          <li class="list-group-item">
+            Legfelső sor krumpli legyen, szintén kicsit megsózzuk, majd ráöntjük
+            a tejfölt, és elsimítjuk.
+          </li>
+          <li class="list-group-item">Tetejére zsemlemorzsát szórunk.</li>
+          <li class="list-group-item">
+            Előmelegített sütőben kb. 40-60 percig sütjük, míg szép aranybarna
+            lesz a teteje.
+          </li>
+        </ol>
+      </section>
+
+      <!-- source -->
+      <div class="mb-3">
+        <button
+          class="btn btn-link text-muted p-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#sourceCollapse"
+          aria-expanded="false"
+          aria-controls="sourceCollapse"
+        >
+          Forrás
+        </button>
+      </div>
+      <div class="collapse" id="sourceCollapse">
+        <small class="text-muted">
+          https://www.nosalty.hu/recept/rakott-krumpli-viciko-konyhajabol
+          <br />
+          https://www.mindmegette.hu/rakott-krumpli.recept/
+        </small>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-5 py-3 bg-light fixed-bottom">
+      <div class="container text-center">
+        <span class="text-muted">© 2025 My Favourite Recipes</span>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

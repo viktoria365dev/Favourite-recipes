@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chili con carne</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="../index.html"
+          >My Favourite Recipes</a
+        >
+        <!-- Toggler for mobile -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="mainNavbar"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../recipes.html">Recipes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="gradient-header text-center py-5 mb-4">
+      <div class="container">
+        <h1 class="fw-bold">Chili con carne</h1>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="container pb-5 mb-5">
+      <div class="row align-items-start mb-5 g-4">
+        <!-- image -->
+        <div class="col-12 col-md-6">
+          <div class="ratio ratio-1x1">
+            <img
+              src="../photos/chili-con-carne.jpg"
+              class="rounded object-fit-cover w-100 h-100"
+              alt="Chili-con-carne"
+            />
+          </div>
+        </div>
+
+        <!-- ingredients -->
+        <div class="col-12 col-md-6">
+          <section class="mb-4">
+            <h2 class="section-title ingredients">Hozzávalók:</h2>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">2 el olijfolie</li>
+              <li class="list-group-item">500 g rundergehakt</li>
+              <li class="list-group-item">2 uien</li>
+              <li class="list-group-item">2 tenen knoflook</li>
+              <li class="list-group-item">1 rode paprika</li>
+              <li class="list-group-item">0,5 tl chilipoeder</li>
+              <li class="list-group-item">0,5 tl kaneelpoeder</li>
+              <li class="list-group-item">1 el tomatenpuree</li>
+              <li class="list-group-item">500 ml gezeefde tomaten</li>
+              <li class="list-group-item">650 g bruine bonen</li>
+              <li class="list-group-item">150 g maïs</li>
+              <li class="list-group-item">1 snufje zout</li>
+              <li class="list-group-item">125 ml crème fraîche</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+      <!-- instructions -->
+      <section class="mb-4">
+        <h2 class="section-title instructions">Elkészítés:</h2>
+        <ol class="list-group list-group-numbered list-group-flush">
+          <li class="list-group-item">
+            Verhit de olie in een braadpan. Bak het gehakt in ca. 3 min. rul.
+            Voeg de ui, de knoflook en de paprika toe en bak ca. 3 min. mee.
+            Schep het chilipoeder, de komijn en de kaneel erdoor en bak nog 1
+            min.
+          </li>
+          <li class="list-group-item">
+            Voeg de tomatenpuree en de gezeefde tomaten toe en breng het aan de
+            kook. Stoof de chili ca. 10 min. op laag vuur.
+          </li>
+          <li class="list-group-item">
+            Meng de bonen en de maïs door de chili en breng op smaak met zout en
+            peper.
+          </li>
+          <li class="list-group-item">
+            Schep de chili in de kommen en garneer met een schep crème fraîche
+            en de peterselie.
+          </li>
+        </ol>
+      </section>
+
+      <!-- source -->
+      <div class="mb-3">
+        <button
+          class="btn btn-link text-muted p-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#sourceCollapse"
+          aria-expanded="false"
+          aria-controls="sourceCollapse"
+        >
+          Forrás
+        </button>
+      </div>
+      <div class="collapse" id="sourceCollapse">
+        <small class="text-muted">
+          https://www.jumbo.com/inspiratie/vlees/chili-con-carne
+        </small>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-5 py-3 bg-light fixed-bottom">
+      <div class="container text-center">
+        <span class="text-muted">© 2025 My Favourite Recipes</span>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
