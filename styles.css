@@ -1,5 +1,10 @@
-html,
 body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-y: scroll;
   margin: 0;
   padding: 0;
 }
@@ -21,6 +26,18 @@ body {
   letter-spacing: 0.05em;
 }
 
+.gradient-header p {
+  max-width: 450px;
+}
+
+.gradient-header img {
+  object-fit: cover;
+}
+
+.main-color {
+  color: var(--gradient-dark);
+}
+
 /* Main */
 
 :root {
@@ -33,4 +50,98 @@ body {
 
 .section-title.instructions {
   color: var(--gradient-dark);
+}
+
+/* Carousel */
+
+.carousel img {
+  object-fit: cover;
+  height: 450px;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  color: #fff;
+}
+
+/* About teaser */
+
+.icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff5e6;
+  border-radius: 50%;
+  padding: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.about-icon {
+  width: 80px;
+  height: 80px;
+  display: block;
+}
+
+.egg-yolk {
+  fill: var(--gradient-dark);
+  transition: transform 200ms ease, filter 200ms ease;
+}
+
+.icon-wrapper:hover .egg-yolk {
+  transform: scale(1.06);
+  filter: drop-shadow(0 3px 8px rgba(224, 122, 95, 0.35));
+}
+
+/* Buttons */
+.btn-header {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--gradient-dark);
+  --bs-btn-border-color: var(--gradient-dark);
+
+  --bs-btn-hover-color: #3b2a28;
+  --bs-btn-hover-bg: #f2a88f;
+  --bs-btn-hover-border-color: #f2a88f;
+}
+
+.btn-accent {
+  --bs-btn-color: var(--gradient-dark);
+  --bs-btn-border-color: var(--gradient-dark);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--gradient-dark);
+  --bs-btn-hover-border-color: var(--gradient-dark);
+}
+
+/* Recipe page */
+.recipe-thumb {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.recipe-card:hover .recipe-thumb {
+  transform: scale(1.03);
+}
+
+.recipe-name {
+  font-size: 1.2rem;
+  color: var(--bs-body-color);
+  transition: color 0.2s ease;
+}
+
+.recipe-card:hover .recipe-name {
+  color: var(--gradient-dark);
+}
+
+@media (min-width: 768px) {
+  .recipe-thumb {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+  }
+  .recipe-name {
+    font-size: 1.4rem;
+  }
 }

@@ -52,11 +52,168 @@
     </nav>
 
     <!-- Header -->
+    <header class="gradient-header py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Text Column -->
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h1 class="fw-bold">
+              Üdvözöllek a
+              <span class="main-color">My Favourite Recipes</span> weboldalon!
+            </h1>
+            <p class="lead">
+              Külföldön élek, ezért sokszor hiányoznak a magyaros ízek. Gyors,
+              könnyen elkészíthető recepteket kerestem, amelyek akkor is
+              elkészíthetők, ha bizonyos összetevőket nem tudunk beszerezni. A
+              kedvenceimet gyűjtöttem itt össze: azokat az ételeket, amiket a
+              leggyakrabban készítettem el az utóbbi években.
+            </p>
+            <a href="./recipes.html" class="btn btn-lg btn-header">
+              Minden recept
+            </a>
+          </div>
+          <!-- Image Column -->
+          <div class="col-lg-6 text-center">
+            <img
+              src="./photos/kakaos-csiga-index.jpg"
+              alt="kakaós csiga"
+              class="img-fluid rounded shadow"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
 
     <!-- Main -->
+    <main>
+      <!-- Featured Recipes Carousel -->
+      <section class="py-5">
+        <div class="container">
+          <h2 class="mb-4 text-center">A legnépszerűbb receptek</h2>
+          <div
+            id="recipeCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                <a href="/recipes/fahejas-csiga.html">
+                  <img
+                    src="./photos/fahejas-csiga.jpg"
+                    class="d-block w-100 rounded"
+                    alt="fahéjas csiga"
+                  />
+                  <div
+                    class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3"
+                  >
+                    <h5>Fehéjas csiga</h5>
+                    <p>Puha, fehéjas csiga, amit nem lehet megunni.</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="carousel-item">
+                <a href="/recipes/gombaporkolt.html">
+                  <img
+                    src="./photos/gombaporkolt.jpg"
+                    class="d-block w-100 rounded"
+                    alt="gombapörkölt"
+                  />
+                  <div
+                    class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3"
+                  >
+                    <h5>Gombapörkölt</h5>
+                    <p>Egyszerűen elkészíthető gombapörkölt tésztával.</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="carousel-item">
+                <a href="/recipes/francia-hagymaleves.html">
+                  <img
+                    src="./photos/hagymaleves3.jpg"
+                    class="d-block w-100 rounded"
+                    alt="hagymaleves"
+                  />
+                  <div
+                    class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3"
+                  >
+                    <h5>Hagymaleves</h5>
+                    <p>
+                      Finom, gyors hagymaleves pirított kenyérrel és sajttal.
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#recipeCarousel"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#recipeCarousel"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <div class="container text-center">
+          <div class="icon-wrapper mb-3" aria-hidden="true">
+            <!-- Inline SVG fried egg -->
+            <svg
+              class="about-icon"
+              viewBox="0 0 64 64"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Fried egg"
+            >
+              <!-- Egg white -->
+              <path
+                class="egg-white"
+                d="M18 14c6-6 22-7 30 1 5 5 9 12 6 18-3 6-10 8-13 13-3 5-7 9-15 8-8-1-16-6-18-13-2-7 4-13 8-18 1-3 1-6 2-9z"
+                fill="#ffffff"
+                stroke="#e7e7e7"
+                stroke-width="2"
+              />
+              <!-- Yolk -->
+              <circle class="egg-yolk" cx="36" cy="32" r="10" />
+            </svg>
+          </div>
+
+          <h2 class="fw-bold">Az oldalról</h2>
+          <p class="lead">
+            Külföldön élő magyarként sokszor hiányoznak a magyaros ízek és
+            ételek. Nem minden összetevőt tudok itt beszerezni, de ez nem
+            akadályoz meg abban, hogy néha egy magyar konyhában érezzem magam.
+            Nem vagyok egy konyhatündér, ezért az egyszerű és gyors receptek
+            érdekelnek. Ezen az oldalon összegyűjtöttem kedvenc, kipróbált
+            receptjeimet, amelyek gyorsak, egyszerűek, és mindig feldobják a
+            napomat.
+          </p>
+          <a href="./about.html" class="btn btn-accent"> Tudj meg többet </a>
+        </div>
+      </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="footer mt-5 py-3 bg-light fixed-bottom">
+    <footer class="footer mt-5 py-3 bg-light">
       <div class="container text-center">
         <span class="text-muted">© 2025 My Favourite Recipes</span>
       </div>
